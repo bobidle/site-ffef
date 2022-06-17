@@ -11,6 +11,7 @@ export BUILD_LOG=1
 
 echo "Workaround broken git:// Github repos"
 git config --global url."https://github.com/".insteadOf git://github.com/
+git config --global --list
 
 echo "Baue Target: "$GLUON_TARGET
 echo "make -C gluon update"
