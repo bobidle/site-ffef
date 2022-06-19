@@ -16,8 +16,8 @@ git config --global --list
 echo "Baue Target: "$GLUON_TARGET
 echo "make -C gluon update"
 make -C gluon update >> logs/$GLUON_TARGET.log
-echo "make -C gluon V=s"
-make -C gluon -j$(nproc) V=s >> logs/$GLUON_TARGET.log
+echo "make -C gluon"
+make -C gluon -j$(nproc) >> logs/$GLUON_TARGET.log
 ls -l
 cd gluon/output
 ls -l
