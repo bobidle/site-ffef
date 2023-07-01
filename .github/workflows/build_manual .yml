@@ -33,7 +33,7 @@ jobs:
           files: site.conf
           args: --config ./gluon/.luacheckrc
       - name: Buildmatrix
-        if: github.repository == 'bobidle/site-ffef'
+        if: ${{ github.repository == 'bobidle/site-ffef' }}
         id: setmatrix
         run: |
           ln -s ../ site
@@ -75,7 +75,7 @@ jobs:
           name: ${{ matrix.target }}_output
           path: gluon/output
       - name: upload
-        if: github.repository == 'FreifunkErfurt/site-ffef'
+        if: ${{ github.repository == 'FreifunkErfurt/site-ffef' }}
         env:
           SSH_KEY: ${{ secrets.GITSYNC_PRIVATE_KEY }}
         run: |
