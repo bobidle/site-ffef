@@ -33,7 +33,7 @@ jobs:
           files: site.conf
           args: --config ./gluon/.luacheckrc
       - name: Buildmatrix
-        if: github.repository == 'bobidle/site-ffef'
+        if: github.repository == 'bobidle/site-ffefa'
         id: setmatrix
         run: |
           ln -s ../ site
