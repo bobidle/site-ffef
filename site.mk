@@ -1,40 +1,7 @@
-##	GLUON_FEATURES
-#		Specify Gluon features/packages to enable;
-#		Gluon will automatically enable a set of packages
-#		depending on the combination of features listed
-
-GLUON_FEATURES := \
-	alfred \
-	autoupdater \
-	config-mode-domain-select \
-	scheduled-domain-switch \
-	ebtables-filter-multicast \
-	ebtables-filter-ra-dhcp \
-	ebtables-limit-arp \
-	ebtables-source-filter \
-	mesh-batman-adv-15 \
-	mesh-vpn-fastd \
-	respondd \
-	status-page \
-	web-admin \
-	web-advanced \
-	web-private-wifi \
-	web-wizard
-
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
 
 GLUON_MULTIDOMAIN := 1
-
-##	GLUON_SITE_PACKAGES
-#		Specify additional Gluon/OpenWrt packages to include here;
-#		A minus sign may be prepended to remove a packages from the
-#		selection that would be enabled by default or due to the
-#		chosen feature flags
-
-GLUON_SITE_PACKAGES := \
-	iwinfo \
-	respondd-module-airtime
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -42,7 +9,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 2022.1.4
+DEFAULT_GLUON_RELEASE := 2023.2.3.0
 
 # Variables set with ?= can be overwritten from the command line
 
